@@ -25,7 +25,7 @@ public class Arithmetic {
         }
 
         Path dir = Paths.get("src", "exceptions");
-        try (BufferedReader br = Files.newBufferedReader(dir.resolve("Arithmetic.java"));) {
+        try (BufferedReader br = Files.newBufferedReader(dir.resolve("Arithmetic.java"))) {
             System.out.println(br.readLine());
         } catch (IOException e) {
             e.printStackTrace();
